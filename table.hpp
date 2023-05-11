@@ -69,6 +69,16 @@ public:
             std::cout << std::endl;
         }
     }
+
+    int get_rows()
+    {
+        return this->rows;
+    }
+
+    int get_columns()
+    {
+        return this->columns;
+    }
 };
 
 namespace csv

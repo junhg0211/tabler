@@ -24,6 +24,11 @@ namespace terminal
         std::cout << "\033[2J\033[1;1H";
     }
 
+    void clear_line()
+    {
+        std::cout << "\33[2K\r";
+    }
+
     void move(int x, int y)
     {
         std::cout << "\033[" << x << ";" << y << "H";
